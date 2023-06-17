@@ -21,17 +21,11 @@ jobs:
       - name: Upload Offline Installer
         uses: actions/upload-artifact@v3
         with:
-          name: Pixel Launcher Extended Offline Installer
+          name: Offline Installer UNZIP ME FIRST
           path: "Pixel Launcher Extended Offline Installer*.zip"
 
       - name: Upload Online Installer
         uses: actions/upload-artifact@v3
         with:
-          name: Pixel Launcher Extended Online Installer
+          name: Online Installer UNZIP ME FIRST
           path: "Pixel Launcher Extended Online Installer*.zip"
-
-      - name: Upload Manual Installer
-        uses: actions/upload-artifact@v3
-        with:
-          name: Pixel Launcher Extended Manual Installer
-          path: "Pixel Launcher Extended Manual Installer*.zip"
