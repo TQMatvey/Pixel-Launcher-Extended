@@ -11,3 +11,9 @@ echo ">> Creating Offline Installer"
 cp offline_setup.sh setup.sh
 zip -r -q "Pixel Launcher Extended Offline Installer $version.zip" . -x .git/\* screenshots/\* builder.sh builder_dependencies.sh banner.jpg banner2.jpg changelog.md codename.txt logo.png online_setup.sh customize_setup.sh manual_setup.sh manual_installer_instructions.md README.md Pixel\ Launcher\ Extended*
 rm setup.sh
+
+# Create Offline Installer
+echo ">> Creating Online Installer"
+cp online_setup.sh setup.sh
+zip -r -q "Pixel Launcher Extended Online Installer $version.zip" . -x .git/\* screenshots/\* builder.sh builder_dependencies.sh banner.jpg banner2.jpg changelog.md codename.txt logo.png online_setup.sh customize_setup.sh manual_setup.sh manual_installer_instructions.md README.md Pixel\ Launcher\ Extended*
+rm setup.sh
